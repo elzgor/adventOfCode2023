@@ -1,4 +1,3 @@
-
 inputs = open("inputsday1.txt", "r")
 
 xs = []
@@ -25,7 +24,3 @@ counter = 0
 for f in finals:
     counter += f
 print(counter)
-
-inputs.close()
-
-#56042
