@@ -1,12 +1,5 @@
 import re
 
-"""
-The power of a set of cubes is equal to the numbers of red, green, and blue cubes multiplied together. 
-For each game, find the minimum set of cubes that must have been present. 
-What is the sum of the power of these sets?
-"""
-
-
 inputs = open("inputsday2.txt", "r")
 
 xs = []
@@ -21,7 +14,6 @@ for x in xs:
     minimums = [0,0,0] # red green blue
     for combo in x[1]:
         combo1 = combo.split(",")
-        #print(x, combo, combo1)
 
         for specific in combo1:
             val = sum(int(a) for a in re.findall(r'\d+', specific))
@@ -36,4 +28,3 @@ for x in xs:
     powers += power
 
 print(powers)
-#63700
