@@ -20,8 +20,7 @@ for x in xs:
                 val = sum(int(a) for a in re.findall(r'\d+', specific))
                 
                 if (("red" in specific) and (val > 12)) or (("green" in specific) and (val > 13)) or (("blue" in specific) and (val > 14)):
-                    caniadd = False
-                    
+                    caniadd = False          
             break
         
     if caniadd == True:
@@ -29,4 +28,3 @@ for x in xs:
         print(ys)
 
 print(ys)
-# 2176
