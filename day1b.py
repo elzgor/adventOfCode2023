@@ -50,10 +50,6 @@ counter = 1
 toBeAdded = []
 
 for x in xs:
-    #print(First(x), "     ", counter)
     toBeAdded.append(First(x))
-    #counter += 1
-
+    
 print(sum(toBeAdded))
-
-#55358
